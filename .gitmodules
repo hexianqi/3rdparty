@@ -1,0 +1,16 @@
+[submodule "C#/sharppcap"]
+	path = "C#/sharppcap"
+	url = https://github.com/chmorgan/sharppcap.git
+
+
+[submodule "Qt/qt-solutions"]
+	path = Qt/qt-solutions
+	url = https://github.com/qtproject/qt-solutions.git
+
+[submodule "Qt/qtcanpool"]
+	path = Qt/qtcanpool
+	url = https://gitee.com/icanpool/qtcanpool
+
+[submodule "Qt/QWidgetDemo"]
+	path = Qt/QWidgetDemo
+	url = https://gitee.com/feiyangqingyun/QWidgetDemo.git
