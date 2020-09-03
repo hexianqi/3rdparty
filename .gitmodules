@@ -14,3 +14,6 @@
 [submodule "Qt/QWidgetDemo"]
 	path = Qt/QWidgetDemo
 	url = https://gitee.com/feiyangqingyun/QWidgetDemo.git
+[submodule "Qt/TTKWidgetTools"]
+	path = Qt/TTKWidgetTools
+	url = https://github.com/Greedysky/TTKWidgetTools.git
