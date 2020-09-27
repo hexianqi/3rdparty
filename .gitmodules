@@ -17,3 +17,6 @@
 [submodule "Qt/TTKWidgetTools"]
 	path = Qt/TTKWidgetTools
 	url = https://github.com/Greedysky/TTKWidgetTools.git
+[submodule "Qt/QXlsx"]
+	path = Qt/QXlsx
+	url = https://github.com/QtExcel/QXlsx.git
