@@ -19,3 +19,6 @@
 [submodule "C++/assimp"]
         path = C++/assimp
         url = https://github.com/assimp/assimp.git
+[submodule "Qt/qt-material-widgets"]
+	path = Qt/qt-material-widgets
+	url = https://github.com/laserpants/qt-material-widgets.git
