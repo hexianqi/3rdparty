@@ -22,3 +22,6 @@
 [submodule "Qt/qt-material-widgets"]
 	path = Qt/qt-material-widgets
 	url = https://github.com/laserpants/qt-material-widgets.git
+[submodule "Qt/Log4Qt"]
+	path = Qt/Log4Qt
+	url = https://github.com/MEONMedical/Log4Qt
