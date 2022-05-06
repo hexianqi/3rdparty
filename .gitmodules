@@ -25,3 +25,6 @@
 [submodule "Qt/Log4Qt"]
 	path = Qt/Log4Qt
 	url = https://github.com/MEONMedical/Log4Qt
+[submodule "python/luxpy"]
+	path = python/luxpy
+	url = https://github.com/ksmet1977/luxpy.git
