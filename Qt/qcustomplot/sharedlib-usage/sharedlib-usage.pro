@@ -9,11 +9,14 @@
 # HEADERS variable, but only included in your source files with #include.
 #
 
+
 QT          += widgets printsupport
 
 TEMPLATE    = app
 
 DESTDIR     = "../../../Dest"
+
+CONFIG      += c++11
 
 TARGET      = sharedlib-usage
 
@@ -24,16 +27,9 @@ SOURCES     += main.cpp
 
 INCLUDEPATH += ..
 
-debug {
-    LIBS    += \
-            -L$$DESTDIR -lqcustomplotd2
+# Link with debug version of qcustomplot if compiling in debug mode, else with release library:
+CONFIG(debug, release|debug) {
+LIBS        += -L$$DESTDIR -lqcustomplotd2
+} else {
+LIBS        += -L$$DESTDIR -lqcustomplot2
 }
-
-#release {
-#    LIBS    += \
-#            -L$$DESTDIR -lqcustomplot2
-#}
-
-
-INCLUDEPATH += $$PWD/../../../Dest
-DEPENDPATH += $$PWD/../../../Dest

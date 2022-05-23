@@ -6,7 +6,7 @@
     
     C++     assimp          2020-10-10  https://github.com/assimp/assimp.git
 
-    Qt      QCustomPlot     2.0.1       https://www.qcustomplot.com/
+    Qt      QCustomPlot     2.1.0       https://www.qcustomplot.com/
             qtcanpool       2019-08-01  https://gitee.com/icanpool/qtcanpool
             qt-solutions                https://github.com/qtproject/qt-solutions
             QWidgetDemo                 https://gitee.com/feiyangqingyun/QWidgetDemo.git            

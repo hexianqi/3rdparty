@@ -10,7 +10,8 @@ DESTDIR     = "../../../Dest"
 
 DEFINES     += QCUSTOMPLOT_COMPILE_LIBRARY
 
-#CONFIG      += debug_and_release build_all
+CONFIG      += debug_and_release build_all c++11
+
 static {
   CONFIG += static
 } else {
@@ -20,19 +21,18 @@ static {
 SOURCES     += ../qcustomplot.cpp
 HEADERS     += ../qcustomplot.h
 
-VERSION = 2.0.1
+VERSION = 2.1.0
 
-Debug {
-    TARGET = qcustomplotd
-    QMAKE_TARGET_PRODUCT = "QCustomPlot (debug mode)"
-    QMAKE_TARGET_DESCRIPTION = "Plotting library for Qt (debug mode)"
+TARGET = qcustomplot
+CONFIG(debug, debug|release) {
+  TARGET = $$join(TARGET,,,d) # if compiling in debug mode, append a "d" to the library name
+  QMAKE_TARGET_PRODUCT = "QCustomPlot (debug mode)"
+  QMAKE_TARGET_DESCRIPTION = "Plotting library for Qt (debug mode)"
+} else {
+  QMAKE_TARGET_PRODUCT = "QCustomPlot"
+  QMAKE_TARGET_DESCRIPTION = "Plotting library for Qt"
 }
-
-Release {
-    TARGET  = qcustomplot
-    QMAKE_TARGET_PRODUCT = "QCustomPlot"
-    QMAKE_TARGET_DESCRIPTION = "Plotting library for Qt"
-}
-
 QMAKE_TARGET_COMPANY = "www.qcustomplot.com"
 QMAKE_TARGET_COPYRIGHT = "Copyright (C) by Emanuel Eichhammer"
+
+
